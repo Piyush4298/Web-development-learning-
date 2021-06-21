@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Display in CSS</title>
+        <style>
+            h1{
+                background-color : greenyellow;
+                display: inline;
+            }
+            a{
+                display: block;
+                background-color: greenyellow;
+            }
+            div{
+                background-color: hotpink;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This class is about Display</h1>
+        <hr>
+        <h1>This is first H1</h1>
+        <h1>This is second H1</h1>
+        <hr>
+        <a href="">This is first anchor tag</a>
+        <a href="">This is second anchor tag</a>
+        <a href="">This is third anchor tag</a>
+        <hr>
+        <div>
+            <h2>This is div1</h2>
+        </div>
+        <div>
+            <h2>This is div2</h2>
+        </div>
+    </body>
+</html>
+<!--
+    block : Element taking complete width, then that html element's display property is block.
+    inline : Width upto content of the element, best example : anchor tags (<a></a>)
+
+    div is a special case (one of special) where just inline doesn't make it inline 
+    we have to use inline-block for making it inline.
+-->

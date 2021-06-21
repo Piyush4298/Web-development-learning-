@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="guns.css" type="text/css"?>
+
+<div>
+    <Heading>
+        GUNS
+    </Heading>
+
+    <guns>
+        <gun>
+            <MODEL>MODEL : MP®9 M2.0™ 4" COMPACT LAW ENFORCEMENT ONLY</MODEL>
+            <TYPE>TYPE : PISTOL</TYPE>
+            <CALIBRE>CALIBRE : 9mm Luger</CALIBRE>
+            <COMPANY>COMPANY : SMITH AND WESSON</COMPANY>
+            <CAPACITY>CAPACITY : 15+1</CAPACITY>
+            <WEIGHT>WEIGHT : 26.6 oz / 754.1g</WEIGHT>
+        </gun>
+        <gun>
+            <MODEL>MODEL : MP®15 FREE-FLOAT HANDGUARD WITH M-LOK® LAW ENFORCEMENT ONLY</MODEL>
+            <TYPE>TYPE : RIFLE</TYPE>
+            <CALIBRE>CALIBRE : 5.56mm NATO/.223</CALIBRE>
+            <COMPANY>COMPANY : SMITH AND WESSON</COMPANY>
+            <CAPACITY>30+1</CAPACITY>
+            <WEIGHT>WEIGHT : 107.3 oz / 3,041.9g</WEIGHT>
+        </gun>
+        <gun>
+            <MODEL>MODEL : PERFORMANCE CENTER® T/C® LRR BLACK 308 WINCHESTER</MODEL>
+            <TYPE>TYPE : LONG RANGE RIFLE</TYPE>
+            <CALIBRE>CALIBRE : 308 WIN/7.62 x 51</CALIBRE>
+            <COMPANY>COMPANY : SMITH AND WESSON</COMPANY>
+            <CAPACITY>CAPACITY : 10</CAPACITY>
+            <WEIGHT>WEIGHT : 11.2 lb</WEIGHT>
+        </gun>
+        <gun>
+            <MODEL>MODEL : AS VAL</MODEL>
+            <TYPE>TYPE : SUPPRESSED ASSAULT RIFLE</TYPE>
+            <CALIBRE>CALIBRE : 7.62*39mm</CALIBRE>
+            <COMPANY>COMPANY : TsNITITochMash STATE DESIGN BUREAU</COMPANY>
+            <CAPACITY>CAPACITY : 20(STANDARD)</CAPACITY>
+            <WEIGHT>WEIGHT : 6 lb(UNLOADED)</WEIGHT>
+        </gun>
+        <gun>
+            <MODEL>MODEL : 1301 COMP</MODEL>
+            <TYPE>TYPE : SEMI-AUTOMATIC SHOTGUN</TYPE>
+            <CALIBRE>CALIBRE : 12 GAUGE</CALIBRE>
+            <COMPANY>COMPANY : BERETTA</COMPANY>
+            <CAPACITY>CAPACITY : 5+1</CAPACITY>
+            <WEIGHT>WEIGHT : 6.4 POUNDS</WEIGHT>
+        </gun>
+    </guns>
+</div>

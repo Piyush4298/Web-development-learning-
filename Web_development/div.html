@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>DIV in HTML</title>
+        <style>
+           div{
+                background-color: orange;
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-top: 50px;
+                border: 2px solid black;
+           }
+           .x{
+               color: whitesmoke;
+           }
+           .y{
+               background-color: aqua;
+           }
+           .z{
+               text-decoration: underline;
+               padding-left: 20px;
+           }
+        </style>
+        <!--
+            To achieve desired output we will have to write these many lines of code
+            So we use div as parent tag for applying common styling.
+             h1{
+                background-color: orange;
+                margin-left: 20px;
+            }
+            h3{
+                background-color: orange;
+                margin-left: 20px;
+            }
+            p{
+                background-color: orange;
+                margin-left: 20px;
+            }
+            ol{
+                background-color: orange;
+                margin-left: 20px;
+            }
+        -->
+    </head>
+    <body>
+        <h1>This is outside div</h1>
+        <div>
+            <h1 class="x">This is h1</h1>
+            <h3 class="y">This is h3</h3>
+            <p class="z">This is paragraph</p>
+            <ol>
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+                <li>list item 4</li>
+            </ol>
+        </div>
+    </body>
+</html>

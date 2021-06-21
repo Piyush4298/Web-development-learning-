@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <!-- Image leads to the official site of AISSMS COE-->
+        <title>Registration Form</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background: orange;
+                font-family: sans-serif;
+                color: black;
+            }
+            .form-wrap{
+                width: 320px;
+                background: rgba(253, 253, 253, 0.973);
+                padding: 40px 20px;
+                box-sizing: border-box;
+                position: relative;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            h3{
+                font-family: cursive;
+                text-align: center;
+                font-weight: normal;
+                font-weight: bold;
+                color: brown;
+                text-decoration: underline;
+                margin-bottom: 10px;
+                font-size: 21px;
+            }
+            input{
+                width: 100%;
+                border: 1px solid black;
+                background-color: whitesmoke;
+                padding: 10px 20px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+            }
+            select{
+                background-color: whitesmoke;
+                padding: 5px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+            }
+            button{
+                text-align: center;
+                width: 100%;
+                padding: 5px 5px 5px 5px;
+                border-radius: 10px;
+                background-color: greenyellow;
+            }
+            img{
+                display: block;
+                height: 100px;
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="form-wrap">
+            <a href="https://aissmscoe.com/" target="_blank"><img src="C:\Users\Dell\Pictures\Saved Pictures\aissmslogo.png" alt="Failed to load!"></a>
+            <form>
+                <h3>Student Registration Form</h3>
+                <br>
+                <label>First Name</label><br>
+                <input type="text" placeholder="First Name">
+                <br>
+                <label>Last Name </label><br>
+                <input type="text" placeholder="Last Name">
+                <br>
+                <label>User Id</label><br>
+                <input type="text" placeholder="Application ID">
+                <br>
+                <label>DOB </label><br>
+                <input type="date">
+                <br>
+                <label>Branch </label><br>
+                <select>
+                    <option selected>Select Branch</option>
+                    <option>Computer Engineering</option>
+                    <option>Electrical Engineering</option>
+                    <option>Electronics Engineering</option>
+                    <option>Civil Engineering</option>
+                    <option>Chemical Engineering</option>
+                    <option>Mechanical Engineering</option>
+                </select>
+                <br>
+                <label>Year </label><br>
+                <select>
+                    <option selected>Select Year</option>
+                    <option>FE</option>
+                    <option>SE</option>
+                    <option>TE</option>
+                    <option>BE</option>
+                </select>
+                <br>
+                <button>SUBMIT</button>
+            </form>
+        </div>
+    </body>
+</html>

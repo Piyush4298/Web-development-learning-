@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculating Total and Percentage</title>
+        
+        <style>
+            *
+            {
+                margin: 0px;
+                padding: 0px;
+                background-color:wheat;
+            }
+ 
+            .container
+            {
+                position: absolute;
+                top: 0;
+                left: 35%;   
+            }
+
+            .form_container
+            {
+                display: flex;
+                flex-direction: column;
+                border: 2.5px solid gold;
+                border-radius: 10px;
+                width: fit-content;
+                justify-content: center;
+                align-items: center;  
+                background-color: yellowgreen;
+                padding-bottom: 10px;
+            }
+            .container img
+            {
+                background-color: white;
+                display: inline-block;
+                width: fit-content;
+                margin: auto;
+                width: 100%;
+                border-radius: 9px;
+            }
+            .container h1
+            {
+                display: inline-block;
+                color: maroon;
+                text-align: center;
+                margin: 5px 12px auto;
+                margin-bottom: 1rem;
+                font-size: 2.5rem;
+                font-style: oblique;
+                border-bottom: 2px solid wheat;
+                background-color: yellowgreen;
+            }
+
+        .form_group
+        {
+            display: grid;
+            grid-template-columns: 50% 30% auto;
+            grid-auto-rows: 3rem;
+            color: black;
+            background-color: yellowgreen;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-style: oblique;
+            cursor: pointer;
+            outline: none;
+            align-items: center;
+            justify-content: center;
+        }
+        .form_group p , .form_group label
+        {
+            font-style: normal;
+            background-color: yellowgreen;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .form_group p
+        {
+            color: gold;
+        }
+        .form_group input
+        {
+            width: 100px;
+            color: black;
+            background-color: aliceblue;
+            border: 2px solid gold;
+            border-radius: 10px;
+            display: block;
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 20px;
+            font-style: oblique;
+            text-align: center;
+            display: block;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .buttons
+        {
+            display: grid;
+            grid-template-columns: 10rem auto;
+            grid-gap: 10px 10px;
+            margin: auto;
+            padding-top: 10px;
+            padding: 5px;
+            align-items: center;
+            justify-content: center;
+            background-color: chocolate;
+        }
+        .btn
+        {
+            width: 100px;
+            color: red;
+            background: black;
+            border: 2px solid greenyellow;
+            border-radius: 20px;
+            display: block;
+            font-family: fantasy;
+            font-size: 20px;
+            font-style: normal;
+            cursor: pointer;
+            outline: none;
+        }
+        .btn:hover
+        {
+            width: 100px;
+            color: rgb(255, 154, 4);
+            background: lightgray;
+            border: 2px solid gold;
+            border-radius: 20px;
+            display: block;
+            font-family: fantasy;
+            font-size: 20px;
+            font-style: normal;
+            cursor: pointer;
+        }
+
+        .result_container
+        {
+            display: flex;
+            flex-direction: column;
+            border: 2.5px solid gold;
+            border-radius: 10px;
+            width: fit-content;
+            justify-content: center;
+            align-items: center;  
+            background-color: mediumspringgreen;
+            padding: 10px 0px;
+            margin: 20px 0px;
+            width: 100%;  
+        }
+        #result_container
+        {
+            display: none;
+        }
+        .result_container p
+        {
+            color: blue;
+            background-color: mediumspringgreen;
+            padding: 5px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="form_container">
+            <img src="C:\Users\Dell\Pictures\Saved Pictures\aissmslogo.png">
+            <h1>Calculating Total & Percentage</h1>   
+            <form action="">
+                <div class="form_group"> <label for="s1">DAA</label> <p>:</p> <input id="s1" type="number" > </div>
+                <div class="form_group"> <label for="s2">SPOS</label> <p>:</p> <input id="s2" type="number" > </div>
+                <div class="form_group"> <label for="s3">SMD</label> <p>:</p> <input id="s3" type="number" > </div>
+                <div class="form_group"> <label for="s4">ESIOT</label> <p>:</p> <input id="s4" type="number" > </div>
+                <div class="form_group"> <label for="s5">WT</label> <p>:</p> <input id="s5" type="number" > </div>
+                <div class="buttons">
+                    <input class="btn" id="submit" type="button" value="SUBMIT" onclick="myFunction()">
+                    <input class="btn" id="clear" type="reset" placeholder="CLEAR" onclick="page_reload()"> 
+                </div>
+            </form> 
+       </div>
+
+        <div class="result_container" id="result_container">
+            <p id="total">Total :=>   300</p>
+            <p id="error_msg">Input not valid</p>
+            <p id="average">Percentage :=>   60 %</p>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            document.getElementById("result_container").style.display = 'flex';
+            var x, text, per;
+            a = parseInt(document.getElementById("s1").value);
+            b = parseInt(document.getElementById("s2").value);
+            c = parseInt(document.getElementById("s3").value);
+            d = parseInt(document.getElementById("s4").value);
+            e = parseInt(document.getElementById("s5").value);
+            if (isNaN(a) || a < 1 || a > 100 || isNaN(b) || b < 1 || b > 100 || isNaN(c) || c < 1 || c > 100 || isNaN(d) || d < 1 || d > 100 || isNaN(e) || e < 1 || e > 100) {
+                text = "Input not valid";
+                document.getElementById("error_msg").innerHTML = text;
+                document.getElementById("total").style.display = 'none';
+                document.getElementById("average").style.display = 'none';
+            } else if (a <= 35 || b <= 35 || c <= 35 || d <= 35 || e <= 35) {
+                text = "Sorry... You have FAIL..!";
+                document.getElementById("error_msg").innerHTML = text;
+                document.getElementById("total").style.display = 'none';
+                document.getElementById("average").style.display = 'none';
+            } else {
+                total = a + b + c + d + e;
+                average = (total / 500) * 100;
+                document.getElementById("error_msg").style.display = 'none';
+                document.getElementById("total").innerHTML = "Total :=>   " + total;
+                document.getElementById("average").innerHTML = "Percentage :=>  " + average + " %";
+            }
+        }
+        function page_reload() {
+            location.reload();
+        }
+    </script>
+
+</body>
+</html>

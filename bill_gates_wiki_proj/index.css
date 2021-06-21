@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(1, 1, 29);
+}
+h1{
+    background-color: white;
+    color: black;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 10px;
+    text-decoration: underline;
+    font-size: 50px;
+    padding-left: 20px;
+}
+img{
+    height: 400px;
+    width: 300px;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+h2{
+    background-color: white;
+    color: black;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 10px;
+    text-decoration: underline;
+    font-size: 32px;
+    padding-left: 20px;
+}
+p{
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+}
+.thanks{
+    background-color: white;
+    color: black;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 10px;
+    text-decoration: underline;
+    font-size: 50px;
+    padding-left: 500px;
+    padding-right: 500px; 
+}

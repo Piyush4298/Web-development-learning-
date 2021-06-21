@@ -1,0 +1,43 @@
+Heading {
+    font-family: Garamond;
+    font-size: 300%;
+    color: blue;
+    font-weight: bold;
+    background-color: #E16E6E;
+    justify-content: center;
+    display: flex;
+  }
+  
+  guns {
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    padding: 0px 1em;
+    background-color: #d43ff4;
+    border: 5px solid lightgreen;
+    width: fit-content;
+  }
+  
+  gun {
+    display: block;
+    width: fit-content;
+    padding-top: 15px;
+    margin-bottom: 2em;
+    border-bottom: 2px solid lightgreen;
+  }
+  
+  MODEL {
+    color: #ffff00;
+    display: block;
+    font-weight: bold;
+  }
+  TYPE,
+  CALIBRE,
+  COMPANY,
+  CAPACITY,
+  WEIGHT {
+    color: #fbf6d9;
+    display: block;
+    margin-right: 10px;
+    display: -moz-inline-box;
+  }
